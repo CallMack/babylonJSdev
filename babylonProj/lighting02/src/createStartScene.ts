@@ -14,6 +14,16 @@ box.position.y = 3;
 box.position.y = 0.51;
 return box;
 }
+function createCylinder(scene: Scene) {
+  let cylinder = MeshBuilder.CreateCylinder(
+    "cylinder",
+    { height: 1, diameter: 0.7 },
+    scene
+  );
+  cylinder.position.x = 1;
+  cylinder.position.y = 1;
+  cylinder.position.z = 1;
+}
 
 function createPointLight(scene: Scene ){
 const light = new PointLight("light", new Vector3(-1, 1, 0),scene);
