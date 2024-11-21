@@ -141,7 +141,7 @@ function importMeshA(scene: Scene, x: number, y: number) {
     character.position.x = x;
     character.position.y = y + 0.1;
     character.scaling = new Vector3(1, 1, 1);
-    character.rotation = new Vector3(0, 1.5, 0);
+    character.rotation = new Vector3(0, 0, 0);
   });
   return item;
 }
