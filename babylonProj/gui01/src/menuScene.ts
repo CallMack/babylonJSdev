@@ -5,16 +5,8 @@ import {
     Scene,
     ArcRotateCamera,
     Vector3,
-    HemisphericLight,
-    MeshBuilder,
-    Mesh,
-    Light,
     Camera,
     Engine,
-    StandardMaterial,
-    Texture,
-    Color3,
-    CubeTexture,
     Sound
   } from "@babylonjs/core";
   import * as GUI from "@babylonjs/gui";
@@ -72,26 +64,6 @@ import {
  }
 
   //----------------------------------------------------------------------------------------------
-  //Create Skybox
-  function createSkybox(scene: Scene) {
-    //Skybox
-    const skybox = MeshBuilder.CreateBox("skyBox", {size:150}, scene);
-	  const skyboxMaterial = new StandardMaterial("skyBox", scene);
-	  skyboxMaterial.backFaceCulling = false;
-	  skyboxMaterial.reflectionTexture = new CubeTexture("textures/skybox", scene);
-	  skyboxMaterial.reflectionTexture.coordinatesMode = Texture.SKYBOX_MODE;
-	  skyboxMaterial.diffuseColor = new Color3(0, 0, 0);
-	  skyboxMaterial.specularColor = new Color3(0, 0, 0);
-	  skybox.material = skyboxMaterial;
-    return skybox;
-  }
-
- 
-  function createHemiLight(scene: Scene) {
-    const light = new HemisphericLight("light", new Vector3(0, 1, 0), scene);
-    light.intensity = 0.8;
-    return light;
-  }
   
   function createArcRotateCamera(scene: Scene) {
     let camAlpha = -Math.PI / 2,
@@ -120,8 +92,6 @@ import {
       titleText: GUI.TextBlock;
       button1: GUI.Button;
       button2: GUI.Button;
-      skybox: Mesh;
-      hemiLight: HemisphericLight;
       camera: Camera;
     }
   
@@ -135,9 +105,7 @@ import {
     let button1 = createSceneButton(scene, "but1", "Start Game", "0px", "-75px", advancedTexture);
     let button2 = createSceneButton(scene, "but2", "Options", "0px", "0px", advancedTexture);
 
-    let skybox = createSkybox(scene);
-    //Scene Lighting & Camera
-    let hemiLight = createHemiLight(scene);
+
     let camera = createArcRotateCamera(scene);
     
     let that: SceneData = {
@@ -147,8 +115,6 @@ import {
       titleText,
       button1,
       button2,
-      skybox,
-      hemiLight,
       camera
     };
     
