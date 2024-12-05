@@ -7,10 +7,19 @@
     "dev": "vite --host",
     "build": "tsc && vite build",
     "preview": "vite preview --host",
-    "lighting01build": "tsc && vite build lighting01",
+    "lighting01build": "vite build lighting01",
     "lighting01preview": "vite preview lighting01 --host",
+    "lighting02build": "tsc && vite build lighting02",
+    "lighting02preview": "vite preview lighting02 --host",
+    "villagebuild": "tsc && vite build village",
+    "villagepreview": "vite preview village --host",
     "collisions03v2build": "tsc && vite build collisions03v2",
-    "collisions03v2preview": "vite preview collisions03v2 --host"
+    "collisions03v2preview": "vite preview collisions03v2 --host",
+    "shapes01build": "vite build shapes01",
+    "shapes01preview": "vite preview shapes01 --host",
+    "gui04build": "vite build gui04",
+    "gui04preview": "vite preview gui04 --host"
+    
 
   },
   "devDependencies": {

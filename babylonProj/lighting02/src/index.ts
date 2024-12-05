@@ -1,5 +1,5 @@
 import { Engine } from "@babylonjs/core";
-import createStartScene from "/workspaces/babylonJSdev/babylonProj/lighting02/src/createStartScene";
+import createStartScene from "/workspaces/babylonProj/babylonProj/lighting02/src/createStartScene.ts";
 import './main.css';
 
 const CanvasName = "renderCanvas";
