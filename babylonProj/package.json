@@ -18,7 +18,9 @@
     "shapes01build": "vite build shapes01",
     "shapes01preview": "vite preview shapes01 --host",
     "gui04build": "vite build gui04",
-    "gui04preview": "vite preview gui04 --host"
+    "gui04preview": "vite preview gui04 --host",
+    "multibuild": "vite build multi",
+    "multipreview": "vite preview multi --host"
     
 
   },
