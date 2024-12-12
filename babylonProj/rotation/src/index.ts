@@ -1,6 +1,6 @@
 import { Engine } from "@babylonjs/core";
 import createStartScene from "./createStartScene";
-import createRunScene from "/workspaces/babylonJSdev/babylonProj/rotation/src/createRunScene";
+import createRunScene from "./createRunScene";
 import "./main.css";
 
 const CanvasName = "renderCanvas";

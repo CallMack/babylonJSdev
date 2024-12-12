@@ -13,7 +13,7 @@
     "lighting02preview": "vite preview lighting02 --host",
     "villagebuild": "tsc && vite build village",
     "villagepreview": "vite preview village --host",
-    "collisions03v2build": "tsc && vite build collisions03v2",
+    "collisions03v2build": "vite build collisions03v2",
     "collisions03v2preview": "vite preview collisions03v2 --host",
     "shapes01build": "vite build shapes01",
     "shapes01preview": "vite preview shapes01 --host",

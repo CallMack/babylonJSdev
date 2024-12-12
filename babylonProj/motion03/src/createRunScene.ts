@@ -13,7 +13,7 @@ import {
   getKeyDown,
 } from "./keyActionManager";
 import { characterActionManager } from "./characterActionManager";
-import { bakedAnimations, walk, run, left, right, idle, stopAnimation, getAnimating, toggleAnimating } from "/workspaces/babylonJSdev/babylonProj/motion03/src/bakedAnimations.ts";
+import { bakedAnimations, walk, run, left, right, idle, stopAnimation, getAnimating, toggleAnimating } from "./bakedAnimations.ts";
 
 export default function createRunScene(runScene: SceneData) {
   runScene.scene.actionManager = new ActionManager(runScene.scene);

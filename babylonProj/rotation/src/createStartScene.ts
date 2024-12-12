@@ -1,4 +1,4 @@
-import { SceneData } from "/workspaces/babylonJSdev/babylonProj/rotation/src/interfaces";
+import { SceneData } from "./interfaces";
 
 import {
   Scene,
